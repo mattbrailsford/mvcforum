@@ -265,6 +265,7 @@
     <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\FavouriteController.cs" />
     <Compile Include="Controllers\FileController.cs" />
+    <Compile Include="Controllers\LegalController.cs" />
     <Compile Include="Controllers\InstallController.cs" />
     <Compile Include="Controllers\OAuthControllers\FacebookOAuthController.cs" />
     <Compile Include="Controllers\OAuthControllers\GoogleOAuthController.cs" />
@@ -319,8 +320,6 @@
     <Compile Include="Areas\Admin\ViewModels\SettingsViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Hello.txt" />
-    <Content Include="App_Data\NuGetBackup\Hello.txt" />
     <Content Include="Content\admin\Admin.css" />
     <Content Include="Content\admin\Images\apple-touch-icon-57-precomposed.png" />
     <Content Include="Content\admin\Images\favicon.ico" />
@@ -787,6 +786,7 @@
     <None Include="job_scheduling_data_2_0.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\PublishProfiles\Build.pubxml" />
     <None Include="Properties\PublishProfiles\Local Deployment.pubxml" />
     <None Include="Scripts\jquery-1.11.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.11.1.js" />
@@ -1013,6 +1013,14 @@
     <Content Include="Scripts\Prettify\run_prettify.js" />
     <Content Include="Scripts\tags.js" />
     <Content Include="Scripts\jquery.tagsinput.min.js" />
+    <Content Include="Themes\Circuitbeard\Content\Fonts\mvcforumli.svg" />
+    <Content Include="Themes\Circuitbeard\Content\Fonts\mvcforumsb.svg" />
+    <Content Include="Themes\Circuitbeard\Content\Images\apple-touch-icon-57-precomposed.png" />
+    <Content Include="Themes\Circuitbeard\Content\Images\arrow-spinner-blue.gif" />
+    <Content Include="Themes\Circuitbeard\Content\Images\favicon.ico" />
+    <Content Include="Themes\Circuitbeard\Content\Images\logo.png" />
+    <Content Include="Themes\Circuitbeard\Content\Scripts\general.js" />
+    <Content Include="Themes\Circuitbeard\Content\Styles\Theme.css" />
     <Content Include="Themes\Metro\Content\Fonts\mvcforumli.svg" />
     <Content Include="Themes\Metro\Content\Fonts\mvcforumsb.svg" />
     <Content Include="Themes\Metro\Content\Images\apple-touch-icon-57-precomposed.png" />
@@ -1148,8 +1156,19 @@
     <Content Include="Scripts\tinymce\skins\lightgray\fonts\tinymce.eot" />
     <Content Include="Scripts\tinymce\skins\lightgray\fonts\readme.md" />
     <Content Include="Scripts\tinymce\langs\readme.md" />
+    <Content Include="Themes\Circuitbeard\Content\Fonts\mvcforumli.eot" />
+    <Content Include="Themes\Circuitbeard\Content\Fonts\mvcforumli.ttf" />
+    <Content Include="Themes\Circuitbeard\Content\Fonts\mvcforumli.woff" />
+    <Content Include="Themes\Circuitbeard\Content\Fonts\mvcforumsb.eot" />
+    <Content Include="Themes\Circuitbeard\Content\Fonts\mvcforumsb.ttf" />
+    <Content Include="Themes\Circuitbeard\Content\Fonts\mvcforumsb.woff" />
+    <Content Include="Themes\Circuitbeard\Views\Shared\_head.cshtml" />
+    <Content Include="Views\Home\Latest.cshtml" />
+    <Content Include="Views\Legal\ToS.cshtml" />
+    <Content Include="Views\Legal\Privacy.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\NuGetBackup\" />
     <Folder Include="Content\languagepacks\" />
     <Folder Include="Views\File\" />
   </ItemGroup>
@@ -1191,9 +1210,13 @@
       <Project>{327a7feb-aefe-47d9-aa0f-c08835e26a3a}</Project>
       <Name>Badge.PosterVoteUp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MVCForum.Badges\Badge.PostMentionsUmbraco\Badge.PostMentionsUmbraco.csproj">
-      <Project>{330a777b-fe88-4cf5-9583-6693547a8f1c}</Project>
-      <Name>Badge.PostMentionsUmbraco</Name>
+    <ProjectReference Include="..\MVCForum.Badges\Badge.PostMentionsArduino\Badge.PostMentionsArduino.csproj">
+      <Project>{abd00fed-cc59-40da-abce-9ec21e8c2072}</Project>
+      <Name>Badge.PostMentionsArduino</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVCForum.Badges\Badge.PostMentionsRaspberryPi\Badge.PostMentionsRaspberryPi.csproj">
+      <Project>{f45f0e03-bd4a-4a3d-947a-b9655b484d4e}</Project>
+      <Name>Badge.PostMentionsRaspberryPi</Name>
     </ProjectReference>
     <ProjectReference Include="..\MVCForum.Badges\Badge.ThousandPoints\Badge.ThousandPoints.csproj">
       <Project>{ba3ac605-745e-4de4-a1bd-08f6d63757db}</Project>

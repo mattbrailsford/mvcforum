@@ -42,6 +42,7 @@ MVCForum.Website/Content/cache/*.css
 MVCForum.Website/Scripts/cache/*.js
 # Nuget
 packages/*
+build/*
 MVCForum.Website/Properties/PublishProfiles/Profile1.pubxml
 MVCForum.Website/Properties/PublishProfiles/Local Deployment.pubxml
 MVCForum.Website/Properties/PublishProfiles/Profile1.pubxml

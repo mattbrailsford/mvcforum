@@ -53,6 +53,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{162E9B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCForum.NuGet", "MVCForum.NuGet\MVCForum.NuGet.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badge.PostMentionsRaspberryPi", "MVCForum.Badges\Badge.PostMentionsRaspberryPi\Badge.PostMentionsRaspberryPi.csproj", "{F45F0E03-BD4A-4A3D-947A-B9655B484D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badge.PostMentionsArduino", "MVCForum.Badges\Badge.PostMentionsArduino\Badge.PostMentionsArduino.csproj", "{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -241,6 +245,26 @@ Global
 		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|x86.ActiveCfg = Release|Any CPU
+		{F45F0E03-BD4A-4A3D-947A-B9655B484D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45F0E03-BD4A-4A3D-947A-B9655B484D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45F0E03-BD4A-4A3D-947A-B9655B484D4E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F45F0E03-BD4A-4A3D-947A-B9655B484D4E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F45F0E03-BD4A-4A3D-947A-B9655B484D4E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F45F0E03-BD4A-4A3D-947A-B9655B484D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45F0E03-BD4A-4A3D-947A-B9655B484D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F45F0E03-BD4A-4A3D-947A-B9655B484D4E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F45F0E03-BD4A-4A3D-947A-B9655B484D4E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F45F0E03-BD4A-4A3D-947A-B9655B484D4E}.Release|x86.ActiveCfg = Release|Any CPU
+		{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -257,6 +281,8 @@ Global
 		{327A7FEB-AEFE-47D9-AA0F-C08835E26A3A} = {3E6DC3D5-3152-415C-B25B-FDF79EF45A7C}
 		{330A777B-FE88-4CF5-9583-6693547A8F1C} = {3E6DC3D5-3152-415C-B25B-FDF79EF45A7C}
 		{ABE6051B-56D8-4867-84DF-43B6AD04A562} = {3E6DC3D5-3152-415C-B25B-FDF79EF45A7C}
+		{F45F0E03-BD4A-4A3D-947A-B9655B484D4E} = {3E6DC3D5-3152-415C-B25B-FDF79EF45A7C}
+		{ABD00FED-CC59-40DA-ABCE-9EC21E8C2072} = {3E6DC3D5-3152-415C-B25B-FDF79EF45A7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.2.1.505.2\lib\NET35

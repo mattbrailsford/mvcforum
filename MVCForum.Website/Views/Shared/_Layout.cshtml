@@ -16,11 +16,10 @@
     <meta name="description" content="@ViewBag.MetaDesc" />
     @RenderSection("SocialMeta", false)
     @ViewBag.Canonical
-    @(
- Bundle.Css()
-                .Add("~/Content/bootstrap/css/bootstrap.css")
-                .Add(themePath + "/Content/Styles/theme.css")
-                .MvcRender("~/content/cache/combined_" + theme + "_#.css")
+    @(Bundle.Css()
+        .Add("~/Content/bootstrap/css/bootstrap.css")
+        .Add(themePath + "/Content/Styles/theme.css")
+        .MvcRender("~/content/cache/combined_" + theme + "_#.css")
     )
     <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,17 +30,24 @@
         var app_base = '@Url.Content("~/")';
     </script>
     @(Bundle.JavaScript()
-                    .Add("~/Scripts/jquery-1.11.1.min.js")
-                    .Add("~/Scripts/jquery.unobtrusive-ajax.js")
-                    .Add("~/Content/bootstrap/js/bootstrap.min.js")
-                    .Add("~/Scripts/jquery.placeholder.min.js")
-                    .Add("~/Content/bootstrap/js/bootstrap-prettify.js")
-                    .Add("~/scripts/pushy/pushy.js")
-                    .Add("~/Scripts/general.js")
-                    .Add(themePath + "/Content/Scripts/general.js")
-                    .MvcRender("~/scripts/cache/combined_" + theme + "_#.js")
+        .Add("~/Scripts/jquery-1.11.1.min.js")
+        .Add("~/Scripts/jquery.unobtrusive-ajax.js")
+        .Add("~/Content/bootstrap/js/bootstrap.min.js")
+        .Add("~/Scripts/jquery.placeholder.min.js")
+        .Add("~/Content/bootstrap/js/bootstrap-prettify.js")
+        .Add("~/scripts/pushy/pushy.js")
+        .Add("~/Scripts/general.js")
+        .Add(themePath + "/Content/Scripts/general.js")
+        .MvcRender("~/scripts/cache/combined_" + theme + "_#.js")
     )
     @RenderSection("Header", false)
+    @{
+        var headPartial = themePath + "/Views/Shared/_head.cshtml";
+        if (System.Web.Hosting.HostingEnvironment.VirtualPathProvider.FileExists(headPartial))
+        {
+            @Html.Partial(headPartial)
+        }
+    }
 </head>
 
 <body class="@TempData[AppConstants.GlobalClass].ToString() loggedin-@(User.Identity.IsAuthenticated.ToString().ToLower())">
@@ -165,7 +171,7 @@
 
                             If you would like to remove the powered by notice, then please vist http://www.mvcforum.com/license -->
 
-                        <p>&copy; @DateTime.UtcNow.Year - @Html.LanguageString("Layout.PoweredBy") <a rel="nofollow" href="http://www.mvcforum.com">MVCForum.com</a></p>
+                        <p>&copy; @DateTime.UtcNow.Year - @Html.LanguageString("Layout.PoweredBy") <a rel="nofollow" href="http://www.mvcforum.com">MVCForum.com</a> | <a href="@Url.Action("ToS", "Legal")">Terms of Service</a> | <a href="@Url.Action("Privacy", "Legal")">Privacy Policy</a></p>
 
                         <!--########################## IMPORTANT - PLEASE DO NOT REMOVE WITHOUT LICENSE ########################### -->
                     </div>
