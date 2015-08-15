@@ -43,13 +43,6 @@
                     .MvcRender("~/scripts/cache/combined_" + theme + "_#.js")
     )
     @RenderSection("Header", false)
-    @{
-        var headPartial = themePath + "/Views/Shared/_head.cshtml";
-        if (System.Web.Hosting.HostingEnvironment.VirtualPathProvider.FileExists(headPartial))
-        {
-            @Html.Partial(headPartial)
-        }
-    }
 </head>
 
 <body class="@TempData[AppConstants.GlobalClass].ToString() loggedin-@(User.Identity.IsAuthenticated.ToString().ToLower())">

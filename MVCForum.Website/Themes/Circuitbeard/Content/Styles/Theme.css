@@ -8,6 +8,8 @@
     pastel blue: 2ab4bd
 ---*/
 
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
@@ -95,12 +97,13 @@ a:hover, a:focus { color: #2368ac; }
 
 /*---- Header ----*/
 section.content-strip { margin-top: -30px; margin-bottom: 30px; background: #ecf0f1; color: #999999; }
-section.content-strip ul { margin: 0; padding: 0; text-align: left; }
+section.content-strip ul { margin: 0; padding: 0; text-align: right; }
 section.content-strip ul li { margin: 0; padding: 0; list-style: none; display: inline-block; text-align: center; }
+section.content-strip ul li:last-child { float: left; }
 section.content-strip ul li a, section.content-strip ul li a:visited { display: block; color: #3b3b3b; padding: 15px 20px; }
 section.content-strip ul li a:hover, section.content-strip ul li a:focus, section.content-strip ul li a.active { background-color: #fff; }
 
-/*--- Breadcrumb ---*/
+/*--- Breadcrumb ---*/ 
 .breadcrumb { background: none; padding: 0 0 15px 0; margin: 0 0 0 0; font-size: 12px; }
 .breadcrumb a, .breadcrumb a:hover { color: #636267; }
 .breadcrumb a:visited, .breadcrumb a:focus { }

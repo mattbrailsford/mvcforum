@@ -16,5 +16,10 @@
         </a>
     </li>
 }
-
+@if (User.Identity.IsAuthenticated)
+{<!--
+    --><li><a href="@Url.Action("Following", "Home")" class="@(TempData[AppConstants.CurrentController].ToString() == "home" && TempData[AppConstants.CurrentAction].ToString() == "following" ? "active" : "")">@Html.Lang("SubNav.Following")</a></li><!--
+    --><li><a href="@Url.Action("PostedIn", "Home")" class="@(TempData[AppConstants.CurrentController].ToString() == "home" && TempData[AppConstants.CurrentAction].ToString() == "postedin" ? "active" : "")">@Html.Lang("SubNav.PostedIn")</a></li><!--
+    --><li><a href="@Url.Action("Index", "Favourite")" class="@(TempData[AppConstants.CurrentController].ToString() == "favourite" && TempData[AppConstants.CurrentAction].ToString() == "index" ? "active" : "")">@Html.Lang("SubNav.Favourites")</a></li><!--
+-->}
 <li>@Html.ActionLink(Html.LanguageString("LogOn.LogOff"), "LogOff", "Members")</li>
