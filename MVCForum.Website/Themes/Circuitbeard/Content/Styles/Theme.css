@@ -8,11 +8,6 @@
     pastel blue: 2ab4bd
 ---*/
 
-@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(//fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic);
-@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
-
 /*--- Bootstrap overides ---*/
 input.form-control, textarea.form-control, select.form-control { -ms-border-radius: 0; border-radius: 0; }
 .navbar { margin-bottom: 30px; }
@@ -93,7 +88,7 @@ a:hover, a:focus { color: #2368ac; }
 .relatedtopicsholder .relatedtopicskey ul { padding: 0; margin: 0; }
 .relatedtopicsholder .relatedtopicskey ul li { padding: 1px 0; display: block; margin: 0; list-style: none; }
 .relatedtopicsholder .relatedtopicskey ul li span.topicvotessmall { margin: 2px 0 0 5px; display: inline-block; padding: 0 4px; border-bottom: none; background-color: #efefef; -ms-border-radius: 50%; border-radius: 50%; }
-.relatedtopicsholder .relatedtopicskey ul li a, .relatedtopicsholder .relatedtopicskeyasdf sdsadf ul li a:visited { font-size: 16px; line-height: 25px; }
+.relatedtopicsholder .relatedtopicskey ul li a, .relatedtopicsholder .relatedtopicskeyasdf ul li a:visited { font-size: 16px; line-height: 25px; }
 
 /*---- Header ----*/
 section.content-strip { margin-top: -30px; margin-bottom: 30px; background: #ecf0f1; color: #999999; }
@@ -101,7 +96,7 @@ section.content-strip ul { margin: 0; padding: 0; text-align: right; }
 section.content-strip ul li { margin: 0; padding: 0; list-style: none; display: inline-block; text-align: center; }
 section.content-strip ul li:last-child { float: left; }
 section.content-strip ul li a, section.content-strip ul li a:visited { display: block; color: #3b3b3b; padding: 15px 20px; }
-section.content-strip ul li a:hover, section.content-strip ul li a:focus, section.content-strip ul li a.active { background-color: #fff; }
+section.content-strip ul li a:hover, section.content-strip ul li a:focus, section.content-strip ul li a.active { background-color: #fff;text-decoration: none; }
 
 /*--- Breadcrumb ---*/ 
 .breadcrumb { background: none; padding: 0 0 15px 0; margin: 0 0 0 0; font-size: 12px; }
@@ -302,7 +297,7 @@ section.content-strip ul li a:hover, section.content-strip ul li a:focus, sectio
 /*--- Tags ---*/
 .tagsinput { padding: 0 0 8px 0; }
 span.tag { display: inline-block; line-height: 18px; height: 18px; position: relative; -ms-border-radius: 0 3px 3px 0; border-radius: 0 3px 3px 0; background-color: #69a7e6; color: #fff; font-size: 10px; margin-right: 6px; padding: 0 4px 0 2px; text-transform: uppercase; }
-span.tag .badge { background-color: #4891dc; font-size: 10px; margin-top: 1px; }
+span.tag .badge { background-color: #4891dc; font-size: 10px; margin-top: 0; }
 span.tag:before { content: ""; float: left; position: absolute; top: 0; left: -6px; width: 0; height: 0; border-color: transparent #69a7e6 transparent transparent; border-style: solid; border-width: 9px 6px 9px 0; }
 span.tag a, span.tag a:visited { color: #fff; text-decoration: none; display: block; line-height: 18px; height: 18px; }
 span.tag a:visited, span.tag a:focus { }
