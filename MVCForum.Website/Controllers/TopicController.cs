@@ -537,11 +537,25 @@ namespace MVCForum.Website.Controllers
             using (UnitOfWorkManager.NewUnitOfWork())
             {
                 var allowedCategories = _categoryService.GetAllowedCategories(UsersRole);
+
+                // Strip out categories I don't have create permissions for
+                for (var i = allowedCategories.Count - 1; i >= 0; i--)
+                {
+                    var perm = allowedCategories[i].CategoryPermissionForRoles
+                        .FirstOrDefault(x => x.MembershipRole.RoleName == UsersRole.RoleName
+                        && x.Permission.Name == AppConstants.PermissionCreateTopics);
+                    if (perm != null && !perm.IsTicked)
+                    {
+                        allowedCategories.RemoveAt(i);
+                    }
+                }
+
                 if (allowedCategories.Any() && LoggedOnUser.DisablePosting != true)
                 {
                     var viewModel = PrePareCreateEditTopicViewModel(allowedCategories);
                     return View(viewModel);
                 }
+
                 return ErrorToHomePage(LocalizationService.GetResourceString("Errors.NoPermission"));
             }
         }
