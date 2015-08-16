@@ -4,9 +4,7 @@
 }
 @section side
 {
-    @Html.Action("SideSearch", "Search")
-    @Html.Action("PopularTags", "Tag", new { amountToTake = 20})
-    @Html.Action("CurrentWeekHighPointUsers", "Point")
+    @Html.Partial("_CommonSideNav")
 }
 
 
