@@ -1141,7 +1141,6 @@
     <Content Include="Themes\Circuitbeard\Content\Fonts\mvcforumsb.eot" />
     <Content Include="Themes\Circuitbeard\Content\Fonts\mvcforumsb.ttf" />
     <Content Include="Themes\Circuitbeard\Content\Fonts\mvcforumsb.woff" />
-    <Content Include="Themes\Circuitbeard\Views\Shared\_head.cshtml" />
     <Content Include="Views\Home\Latest.cshtml" />
     <Content Include="Views\Legal\ToS.cshtml" />
     <Content Include="Views\Legal\Privacy.cshtml" />
