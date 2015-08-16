@@ -998,6 +998,7 @@
     <Content Include="Themes\Circuitbeard\Content\Images\favicon.ico" />
     <Content Include="Themes\Circuitbeard\Content\Images\logo.png" />
     <Content Include="Themes\Circuitbeard\Content\Scripts\general.js" />
+    <Content Include="Themes\Circuitbeard\Content\Styles\Imports.css" />
     <Content Include="Themes\Circuitbeard\Content\Styles\Theme.css" />
     <Content Include="Themes\Metro\Content\Fonts\mvcforumli.svg" />
     <Content Include="Themes\Metro\Content\Fonts\mvcforumsb.svg" />
@@ -1006,7 +1007,6 @@
     <Content Include="Themes\Metro\Content\Images\favicon.ico" />
     <Content Include="Themes\Metro\Content\Images\logo.png" />
     <Content Include="Themes\Metro\Content\Scripts\general.js" />
-    <Content Include="Themes\Metro\Content\Styles\imports.css" />
     <Content Include="Themes\Metro\Content\Styles\Theme.css" />
     <Content Include="Scripts\general.js" />
     <Content Include="Scripts\MicrosoftAjax.debug.js" />
@@ -1145,9 +1145,6 @@
     <Content Include="Views\Home\Latest.cshtml" />
     <Content Include="Views\Legal\ToS.cshtml" />
     <Content Include="Views\Legal\Privacy.cshtml" />
-    <Content Include="Views\Members\PasswordResetSent.cshtml" />
-    <Content Include="Views\Members\ResetPassword.cshtml" />
-    <Content Include="Views\Members\PasswordChanged.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\NuGetBackup\" />
